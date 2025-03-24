@@ -6,7 +6,7 @@ import "./globals.css";
 const ibmPlexMono = IBM_Plex_Mono({
   variable: "--font-ibm-plex-mono",
   subsets: ["latin"],
-  weight: "400",
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
 
 const outfit = Outfit({
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${ibmPlexMono.variable} ${outfit.variable} antialiased`}
+        className={`${ibmPlexMono.variable} ${outfit.variable} antialiased h-screen`}
       >
         {children}
       </body>
