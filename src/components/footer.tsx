@@ -16,7 +16,7 @@ export const Footer = () => {
     ];
 
     return (
-        <ul className="text-blue-300 flex gap-1 flex-nowrap justify-center items-center text-2xl">
+        <ul className="text-blue-300 flex gap-3 flex-nowrap justify-center items-center text-2xl p-8">
             {socialLinks.map((link, index) => (
                 <div key={index} className=" border-blue-300 border-1 p-3 hover:cursor-pointer hover:text-yellow-100">
                     <li>{link.icon}</li>
